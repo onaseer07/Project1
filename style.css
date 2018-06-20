@@ -1,0 +1,17 @@
+.jumbotron {
+    padding: 0.5em 0.6em;
+}
+
+.navbar {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: orange;
+}
+
+.row {
+    color: green;
+}
