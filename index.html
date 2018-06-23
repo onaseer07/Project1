@@ -7,68 +7,59 @@
     <title>Game Hunt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
-    <div class="container" style="text-align: center">
+
+    <div class="container">
         <div class="jumbotron">
-            <p>Find Your Favorite Video Games</p>
+            <p>Discover Your Favorite Video Games!</p>
         </div>
 
         <div class="navbar">
 
-            <nav class="navbar justify-content-between">
-                <div class="logo">
-                    <a class="navbar-brand">
-                        <img src="logo.png" width="100" height="100">
-                    </a>
-                </div>
+            <div class="logo">
+                <a class="navbar-brand">
+                    <img src="logo.png" alt="Game Hunt">
+                </a>
+            </div>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Choices
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Title</a>
-                        <a class="dropdown-item" href="#">Genre</a>
-                </li>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Games" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+            </form>
 
-                
-
-                <div class="search">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Games" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button>
-                        <span>
-                            <em>&nbsp;</em>
-                        </span>
-                    </form>
-                </div>
-
-
-            </nav>
         </div>
 
-
         <div class="row">
-            <div class="col-3">
-                Similar Games
-            </div>
-            <div class="col-4">
+            <div class="col-6">
                 Game Info
             </div>
-            <div class="col-5">
+            <div class="col-6">
                 Video Snippet
             </div>
         </div>
+
+        <div class="similar-games">
+            Similar Games
+        </div>
+
+        <div class="fixed-bottom">
+            © 2018 Game Hunt
+        </div>
+
     </div>
-
-
 
 </body>
 
