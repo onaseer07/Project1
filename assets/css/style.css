@@ -1,31 +1,10 @@
-.jumbotron {
-    padding: 0.5em 0.6em;
-    margin: 0;
+*{
+    color:rgba(0, 0, 0, 0.728);
 }
-
-.navbar {
-    padding: 0;
-    display: flex;
-    justify-content: center;
+#submit{
+    background-color: #1d262e;
+    
 }
-
-p {
-    color: orange;
-    text-align: center;
-    margin: auto;
-}
-
-.row {
-    color: green;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-.page-footer {
-    position: relative;
-    clear:both;
-    margin-bottom: 0;
+#myModal{
+    background-color: #1d262e84;
 }
