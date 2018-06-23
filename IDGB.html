@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Game Hunt</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
+   <script src="main.js"></script>
+</head>
+
+<body>
+   <div class="container" style="text-align: center">
+       <div class="jumbotron">
+           <p>Find Your Favorite Video Games</p>
+       </div>
+
+       <div class="navbar">
+           <nav class="navbar justify-content-between">
+               <div class="logo">
+                   <a class="navbar-brand">
+                       <img src="logo.png" width="100" height="100">
+                   </a>
+               </div>
+
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                       Choices
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown-item" href="#">Title</Title></a>
+                       <a class="dropdown-item" href="#">Genre</a>
+                   </div>
+               </li>
+
+               <div class="search">
+                   <form class="form-inline">
+                       <input class="form-control mr-sm-2" type="search" placeholder="Games" aria-label="Search">
+                       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                       <span>
+                           <em>&nbsp;</em>
+                       </span>
+                   </form>
+               </div>
+
+           </nav>
+       </div>
+
+
+       <div class="row">
+           <div class="col-3">
+               Similar Games
+               <div id="Similar">
+
+               </div>
+           </div>
+           <div class="col-4">
+               Game Info
+               <div id="Summary">
+
+               </div>
+           </div>
+           <div class="col-5">
+               Video Snippet
+               <div id="video-test">
+
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api-endpoint.igdb.com/games/?search=zelda&limit=10&fields=*&filter[rating][gte]=65&expand=games",
+  "method": "GET",
+  "headers": {
+    "user-key": "cc95fe4dfffbe540018cb766f390233b",
+    "Accept": "application/json",
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  var i=0;
+  response.forEach(function(item){
+      console.log(item);
+        if(item.games){
+            $("#Similar").append('<a href='+item.games[i].url+'>'+item.games[i].name+'<br>')
+        }
+
+    //   if(item.videos){
+    //     var Video = $('#video-test');
+    //     Video.append('<iframe frameborder="0" allowfullscreen src=https://www.youtube.com/embed/'+response[i].videos[0].video_id+'></iframe>')
+
+    //   }
+    //   if(item.summary){
+    //     $('#Summary').append(item.name +'<br>')
+    //     $('#Summary').append(item.summary +'<br>')
+    //   }
+      i++
+  })
+});
+
+
+   </script>
+
+</body>
+
+</html>
