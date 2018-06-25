@@ -9,13 +9,13 @@ $(document).ready(function(){
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://api-endpoint.igdb.com/games/?search="+term+"&fields=*",
+            "url": "https://api-endpoint.igdb.com/games/?search="+term+"$&limit=10&fields=*&order=popularity:desc",
             "method": "GET",
             "headers": {
-              "user-key": "186a3663d438fb1004a180d435b09d81",
-              "accept": "application/json"
-            },
-          };
+              "user-key": "a1cd12b6207e87bc68d20068faf02fab",
+              "Accept": "application/json",
+            }
+            }; 
           if (term =="") {
             $("body").append(`
             <div class="modal fade" id="myModal" role="dialog">
