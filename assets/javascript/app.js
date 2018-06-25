@@ -17,7 +17,7 @@ $(document).ready(function () {
             },
         };
 
-          
+
         $.ajax(settings).done(function (response) {
             console.log(response);
             $('.Twitch').empty();
@@ -32,13 +32,13 @@ $(document).ready(function () {
             var TwitchSettings = {
                 "async": true,
                 "crossDomain": true,
-                "url": "https://api.twitch.tv/kraken/streams/?game="+response[0].name+"&limit=5",
+                "url": "https://api.twitch.tv/kraken/streams/?game=" + response[0].name + "&limit=5",
                 "method": "GET",
                 "headers": {
                     "Accept": "application/vnd.twitchtv.v5+json",
                     "Client-ID": "miw3hauybsi442h7ysse8i4y46m3ny",
                 }
-              }
+            }
             $.ajax(TwitchSettings).done(function (response) {
                 console.log(response);
 
@@ -58,10 +58,10 @@ $(document).ready(function () {
             } else {
                 Video.text("No Videos Available")
             }
-            
+
             for (var s = 0; s < response.length; s++) { //loop to show each cover thumbnail of similar games, might change to title and cover
-                if(response[s].cover){
-                $('#Similar').append(`<img class="SimGameThumb" height=50px data-id="${response[s].id}" src="https:${response[s].cover.url}">`)
+                if (response[s].cover) {
+                    $('#Similar').append(`<img class="SimGameThumb" height=50px data-id="${response[s].id}" src="https:${response[s].cover.url}">`)
                 }
             }
             $('.SimGameThumb').on('click', function (event) { //click function to change main display when a similar game is clicked on
@@ -89,18 +89,18 @@ $(document).ready(function () {
                     var TwitchSettings = {
                         "async": true,
                         "crossDomain": true,
-                        "url": "https://api.twitch.tv/kraken/streams/?game="+response[0].name+"&limit=5",
+                        "url": "https://api.twitch.tv/kraken/streams/?game=" + response[0].name + "&limit=5",
                         "method": "GET",
                         "headers": {
                             "Accept": "application/vnd.twitchtv.v5+json",
                             "Client-ID": "miw3hauybsi442h7ysse8i4y46m3ny",
                         }
-                      }
+                    }
                     $.ajax(TwitchSettings).done(function (response) {
                         console.log(response);
-        
+
                         $('.Twitch').append(`<iframe height=300px src="http://player.twitch.tv/?channel=${response.streams[0].channel.name}&autoplay=false" allowfullscreen frameborder=0><iframe>`)
-        
+
                     })
                     if (response[0].videos) {
                         for (var i = 0; i < response[0].videos.length; i++) { //loop to add all videos from object associated with game choice
