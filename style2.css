@@ -2,9 +2,11 @@
     text-align: center;
     width: 1090.8px;
     margin: auto;
-    padding: auto;
+    padding: 0;
     flex-shrink: 0;
+    background-color: white;
 }
+
 
 .jumbotron {
     padding: 0.5em 0.6em;
@@ -17,7 +19,12 @@ img {
     height: auto;
 }
 
-
+body {
+    background-image: url("background-image.jpg");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .navbar {
     padding: 0em 0.6em;
@@ -27,6 +34,11 @@ img {
     height: 100px;
 }
 
+/* .glyph{
+    pointer-events: none;
+} */
+
+
 p {
     color: orange;
     text-align: center;
@@ -35,6 +47,7 @@ p {
 
 .row {
     color: green;
+    height: 500px;
 }
 
 .similar-games {
