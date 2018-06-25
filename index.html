@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Game Hunt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Project1/assets/css/style.css">
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -24,20 +27,23 @@
 
     <div class="container">
         <div class="jumbotron">
-            <p>Discover Your Favorite Video Games!</p>
+
+
+            <div class="logo">
+                <a class="navbar-brand">
+                    <img src="../Project1/assets/images/logo3.PNG" alt="Game Hunt">
+                </a>
+            </div>
+
         </div>
 
         <div class="navbar">
 
-            <div class="logo">
-                <a class="navbar-brand">
-                    <img src="logo.png" alt="Game Hunt">
-                </a>
-            </div>
+            <form class="form-inline">
+                <input class="form-control" id="search" type="search" placeholder="Games" aria-label="Search">
+                <button class="btn btn-outline-success" id="submit" type="submit">Submit</button>
 
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Games" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+
             </form>
 
         </div>
@@ -45,6 +51,27 @@
         <div class="row">
             <div class="col-6">
                 Game Info
+
+                <div id="GameInfo">
+
+                </div>
+            </div>
+            <div class="col-6">
+                Video Snippet
+                <div id="Video"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="Twitch container-fluid">
+                
+            </div>
+        </div>
+        <div class="similar-games container-fluid">
+            Similar Games
+            <div class="row" id="Similar">
+
+            </div>
+
             </div>
             <div class="col-6">
                 Video Snippet
@@ -53,6 +80,7 @@
 
         <div class="similar-games">
             Similar Games
+
         </div>
 
         <div class="fixed-bottom">
@@ -60,6 +88,9 @@
         </div>
 
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 </body>
 
