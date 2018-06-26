@@ -11,6 +11,7 @@
 .jumbotron {
     padding: 0.5em 0.6em;
     margin: 0;
+    background-color: lightgrey;
 }
 
 img {
@@ -20,7 +21,7 @@ img {
 }
 
 body {
-    background-image: url("background-image.jpg");
+    background-image: url("background-image.jpg"); height: auto;
     height: 100%; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +48,8 @@ p {
 
 .row {
     color: green;
-    height: 500px;
+    /* height: 408px; */
+    height: 265px;
 }
 
 .similar-games {
@@ -56,6 +58,8 @@ p {
     bottom: 150px;
     left: 40%;
     right: 40%;
+    text-align: center;
+    /* background-color: white; height: 200px; */
 }
 
 html, body {
@@ -75,6 +79,7 @@ html, body {
     width: 1090.8px;
     margin: auto;
     padding: auto;
+    color: orange;
 }
 
 .form-control {
