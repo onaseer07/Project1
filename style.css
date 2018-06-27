@@ -1,56 +1,10 @@
-
 .container {
     text-align: center;
     width: 1090.8px;
     margin: auto;
     padding: auto;
-    flex-shrink: 0;
 }
-#MainCover{
-    position: relative;
-    height: 300px;
-    width: 220px;
-    float: left;
-    top: 100px;
-    right: 3%;
-    box-shadow: 5px 5px 8px;
-    border-radius: 5px;
-}
-#GameTitle{
-    font-size: 40px;
-    position: relative;
-    top: -134px;
-    color: lightblue;
-    text-shadow: 2px 2px 4px black;
-}
-#carouselExampleControls{
-    position: relative;
-    bottom: 120px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 8px black;
-}
-#Twitch{
-    position: relative;
-}
-#Similar{
-    
-    height: 160px;
-    width:240px;
-}
-#CText{
-    font-size: 20px;
-    color: white;
-    background: rgba(0,0,0,.5);
-    position: fixed;
-    width: 100%;
-    left: 0px;
-    bottom: 0px;
-    
-}
-/* #one,#two{
-    position: relative;
-    bottom: 125px;
-} */
+
 .jumbotron {
     padding: 0.5em 0.6em;
     margin: 0;
@@ -59,6 +13,7 @@
 img {
     max-width: 100%;
     width: auto;
+    height: auto;
 }
 
 .navbar {
@@ -67,8 +22,6 @@ img {
     justify-content: center;
     width: 1090.8px;
     height: 100px;
-
-
 }
 
 p {
@@ -81,21 +34,23 @@ p {
     color: green;
 }
 
-
 .similar-games {
     color: green;
-    left:auto;
-    right:auto;
-    bottom:35px;
-    padding-bottom: 30px;
+    position: fixed;
+    bottom: 150px;
+    left: 40%;
+    right: 40%;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 .page-footer {
     position: relative;
     clear:both;
     margin-bottom: 0;
-
 }
 
 .fixed-bottom {
@@ -105,22 +60,6 @@ p {
     margin: auto;
     padding: auto;
 }
-
-.form-control {
-    width: 76px;
-}
-
-.btn {
-    max-width: 100%;
-}
-
-@media (min-width: 576px) {
-    .form-control {
-        display: inline-block;
-        width: 76px;
-    }
-}
-
 
 @media screen and (max-width: 768px) {
     .container {
@@ -196,3 +135,4 @@ p {
         width: 56%;
         height: 56%;
     }
+}

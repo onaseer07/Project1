@@ -1,9 +1,12 @@
+
 $(document).ready(function () {
     $('#carouselExampleControls').carousel('pause');
 
 
     $("#submit").on("click", function (event) {
         event.preventDefault();
+
+
 
         var term = $("#search").val().trim();
         var settings = {
@@ -25,6 +28,8 @@ $(document).ready(function () {
             $('#GameInfo').empty(); //clears divs for additional searches
             $('#Video').empty();
             $('#Similar').empty();
+
+
             /*$("#gameTitleHeader").append(`
             <h1 class = "gameTitleHeader"id = ${response[0].name}>${response[0].name}</h1>
             <h2> Check Out Similar Games</h2>
@@ -179,10 +184,13 @@ $(document).ready(function () {
 
             var bestBuyTerm = {
                 firstResponse: response[0].name.trim(),
+
+            
             };
             var bestBuysettings = {
                 "async": true,
                 "crossDomain": true,
+
                 "url": "https://api.bestbuy.com/v1/products%28%28search=" + JSON.stringify(bestBuyTerm.firstResponse) + "%29%29?apiKey=A1KfLKNYXxCux4LzG87ur1tV&format=json",
                 "method": "GET"
             };
@@ -198,13 +206,16 @@ $(document).ready(function () {
                     $("#gameTitleHeader").append(`
                     <h6>Sorry! ${bestBuyData.products["0"].name} is out of stock.
                     `)
+
                 } else {
                     $("#gameTitleHeader").append(`
                     <h6>Error
                     `)
                 }
+
             });
         });
+
 
     })
     //IGDB API Call Begins
@@ -243,6 +254,8 @@ $(document).ready(function () {
             }
           });
         $("#search").val("");
+
     });*/
+
     //Best Buy API Call Ends
 });
