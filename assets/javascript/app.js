@@ -179,13 +179,13 @@
             $.ajax(bestBuysettings).done(function (bestBuyData) {
                 console.log(bestBuyData);
 
-                if (bestBuyData.products["0"].onlineAvailability = true) {
+                if (bestBuyData.products[0].onlineAvailability = true) {
                     $("span").append(`
                     <h6><button id="addToCart" href="${bestBuyData.products[0].addToCartUrl}">Buy it Online!</button>
                     `)
-                } else if (bestBuyData.products["0"].onlineAvailability = false) {
+                } else if (bestBuyData.products[0].onlineAvailability = false) {
                     $("span").append(`
-                    <h6>Sorry! ${bestBuyData.products["0"].name} is out of stock.</h6>
+                    <h6>Sorry! ${bestBuyData.products[0].name} is out of stock.</h6>
                     `)
 
                 } else {
