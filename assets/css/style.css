@@ -27,6 +27,10 @@
     text-shadow: 2px 2px 4px black;
     text-align: left;
     line-height: 42px;
+    font-family: 'PT Serif Caption', serif;
+}
+#LSTitle, #SimGamesTitle{
+    font-family: 'Fjalla One', sans-serif;
 }
 #ReleaseDate{
     position: absolute;
@@ -34,6 +38,7 @@
     color: lightblue;
     text-shadow: 2px 2px 4px black;
     text-align: left;
+    font-family: 'Reem Kufi', sans-serif;
 }
 #Summary{
     color: lightblue;
@@ -42,6 +47,9 @@
     text-shadow: 0.5px 0.5px black;
     position: relative;
     top: 100px;
+    font-family: 'Karma', serif;
+    max-height: 430px;
+    overflow: auto;
 }
 #carouselExampleControls{
     position: relative;
