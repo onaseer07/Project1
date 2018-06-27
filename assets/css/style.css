@@ -1,0 +1,51 @@
+html, body{
+    height: 100%;
+
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.753);
+    margin-top: 5px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+
+}
+input {
+    border:0;
+    background-color: #444;
+    margin-right:5px; 
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+#header {
+    background-color: transparent;
+    min-height: 100%;
+}
+
+#submit {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+.logo {
+    margin-bottom: 5px;
+}
+form {
+    max-width: 500px;
+    display: flex;
+}
+#addToCart {
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-style: none;
+    cursor: pointer;
+    
+}
+#addToCart:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-style: none;
+    cursor: pointer;
+    
+}
