@@ -1,10 +1,13 @@
-
+#cont{
+    height:960px;
+}
 .container {
     text-align: center;
     width: 1090.8px;
     margin: auto;
     padding: auto;
     flex-shrink: 0;
+    height: auto;
 }
 #MainCover{
     position: relative;
@@ -18,10 +21,27 @@
 }
 #GameTitle{
     font-size: 40px;
-    position: relative;
+    position: absolute;
     top: -134px;
     color: lightblue;
     text-shadow: 2px 2px 4px black;
+    text-align: left;
+    line-height: 42px;
+}
+#ReleaseDate{
+    position: absolute;
+    font-size: 26px;
+    color: lightblue;
+    text-shadow: 2px 2px 4px black;
+    text-align: left;
+}
+#Summary{
+    color: lightblue;
+    text-align: left;
+    margin: auto;
+    text-shadow: 0.5px 0.5px black;
+    position: relative;
+    top: 100px;
 }
 #carouselExampleControls{
     position: relative;
@@ -31,11 +51,39 @@
 }
 #Twitch{
     position: relative;
+    bottom: 9px;
+}
+#LS{
+    width: 400px;
+    float: left;
+    position: relative;
+    left: -15px;
+    box-shadow: 5px 5px 8px black;
+}
+#LSTitle{
+    font-size: 35px;
+    border-bottom: 3px solid lightblue;
+    position: relative;
+    bottom: 35px;
 }
 #Similar{
-    
-    height: 160px;
-    width:240px;
+    height: 300px;
+    width:220px;
+    box-shadow: 5px 5px 8px black;
+    border-radius: 5px;
+}
+#SimGamesTitle{
+    position: relative;
+    top: -35px;
+    border-bottom: 3px solid lightblue;
+    font-size: 35px;
+}
+#SimilarGames{
+    width: 220px;
+    position: absolute;
+    top: 595px;
+    left: 298px;
+    z-index: 1;
 }
 #CText{
     font-size: 20px;
@@ -47,10 +95,7 @@
     bottom: 0px;
     
 }
-/* #one,#two{
-    position: relative;
-    bottom: 125px;
-} */
+
 .jumbotron {
     padding: 0.5em 0.6em;
     margin: 0;
@@ -196,3 +241,4 @@ p {
         width: 56%;
         height: 56%;
     }
+}
