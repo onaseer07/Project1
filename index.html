@@ -9,89 +9,41 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Project1/assets/css/style.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <script src="main.js"></script> -->
+
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="jumbotron">
 
-
-            <div class="logo">
-                <a class="navbar-brand">
-                    <img src="../Project1/assets/images/logo3.PNG" alt="Game Hunt">
-                </a>
-            </div>
-
+  
+    <div id="header" class="jumbotron" style="border-radius: 0%">
+        <center>
+        <div class="logo">
+            <img src="assets/images/logo.PNG" alt="Game Hunt">
         </div>
-
-        <div class="navbar">
-
-            <form class="form-inline">
-                <input class="form-control" id="search" type="search" placeholder="Games" aria-label="Search">
-                <button class="btn btn-outline-success" id="submit" type="submit">Submit</button>
-
-
+        <div class="form mx-auto">
+            <form>
+                <input class="form-control" id="search" type="text" style="border-radius: 0%;">
+                <button class="btn" id="submit" type="submit" style="border-radius: 0%"><i class="fas fa-search"></i></button>
             </form>
-
         </div>
-
-        <div class="row">
-            <div class="col-6">
-                Game Info
-
-                <div id="GameInfo">
-
-                </div>
-            </div>
-            <div class="col-6">
-                Video Snippet
-                <div id="Video"></div>
-            </div>
+    </center>
+        <div class = "container">
         </div>
-        <div class="row">
-            <div class="Twitch container-fluid">
-                
-            </div>
-        </div>
-        <div class="similar-games container-fluid">
-            Similar Games
-            <div class="row" id="Similar">
-
-            </div>
-
-            </div>
-            <div class="col-6">
-                Video Snippet
-            </div>
-        </div>
-
-        <div class="similar-games">
-            Similar Games
-
-        </div>
-
-        <div class="fixed-bottom">
-            © 2018 Game Hunt
-        </div>
-
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
-
 </body>
 
 
