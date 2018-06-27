@@ -5,7 +5,51 @@
     padding: auto;
     flex-shrink: 0;
 }
-
+#MainCover{
+    position: relative;
+    height: 300px;
+    width: 220px;
+    float: left;
+    top: 100px;
+    right: 3%;
+    box-shadow: 5px 5px 8px;
+    border-radius: 5px;
+}
+#GameTitle{
+    font-size: 40px;
+    position: relative;
+    top: -134px;
+    color: lightblue;
+    text-shadow: 2px 2px 4px black;
+}
+#carouselExampleControls{
+    position: relative;
+    bottom: 120px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px black;
+}
+#Twitch{
+    position: relative;
+}
+#Similar{
+    
+    height: 160px;
+    width:240px;
+}
+#CText{
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    
+}
+/* #one,#two{
+    position: relative;
+    bottom: 125px;
+} */
 .jumbotron {
     padding: 0.5em 0.6em;
     margin: 0;
@@ -14,7 +58,6 @@
 img {
     max-width: 100%;
     width: auto;
-    height: auto;
 }
 
 .navbar {
