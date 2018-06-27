@@ -92,9 +92,31 @@ $(document).ready(function () {
                 <img class="d-block w-100" height="300" width="300" src="https://images.igdb.com/igdb/image/upload/t_screenshot_med/${response[0].screenshots[i].cloudinary_id}.jpg"></div>`)
                 }
             }
+            var Platforms = []
+            for (var i = 0; i < response[0].platforms.length; i++) {
+                Platforms.push(response[0].platforms[i]);
+            }
+            var PlatformIDs = Platforms.toString();
+            var settings3 = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://cors-anywhere.herokuapp.com/https://api-endpoint.igdb.com/platforms/" + PlatformIDs + "?fields=name",
+                "method": "GET",
+                "headers": {
+                    "user-key": "186a3663d438fb1004a180d435b09d81",
+                    "accept": "application/json"
+                },
+            };
+            $.ajax(settings3).done(function (response) {
+                console.log(response);
+                $('#GameTitle').append(`<div id="Platforms"></div>`);
+                
+                for(var i=0; i < response.length; i++){
+                $('#Platforms').append(`${response[i].name} | `)
+                }
+            })
 
             var SimilarGamesIdList = [];
-
             for (var i = 0; i < response[0].games.length; i++) {
                 SimilarGamesIdList.push(response[0].games[i]);
             }

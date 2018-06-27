@@ -1,6 +1,11 @@
 #cont{
     height:960px;
 }
+#Input{
+    position: absolute;
+    right: 100px;
+    top: 23px;
+}
 .container {
     text-align: center;
     width: 1090.8px;
@@ -23,7 +28,7 @@
     font-size: 40px;
     position: absolute;
     top: -134px;
-    color: lightblue;
+    color: rgb(197, 229, 240);
     text-shadow: 2px 2px 4px black;
     text-align: left;
     line-height: 42px;
@@ -32,16 +37,24 @@
 #LSTitle, #SimGamesTitle{
     font-family: 'Fjalla One', sans-serif;
 }
+#Platforms{
+    position: absolute;
+    font-size: 18px;
+    top: 85px;
+    line-height: 22px;
+    text-shadow: 1.5px 1.5px 3px black;
+}
 #ReleaseDate{
     position: absolute;
     font-size: 26px;
-    color: lightblue;
+    color: rgb(197, 229, 240);
     text-shadow: 2px 2px 4px black;
     text-align: left;
     font-family: 'Reem Kufi', sans-serif;
+    width: 300px;
 }
 #Summary{
-    color: lightblue;
+    color: darkgrey;
     text-align: left;
     margin: auto;
     text-shadow: 0.5px 0.5px black;
@@ -70,7 +83,7 @@
 }
 #LSTitle{
     font-size: 35px;
-    border-bottom: 3px solid lightblue;
+    border-bottom: 3px solid  rgb(197, 229, 240);
     position: relative;
     bottom: 35px;
 }
@@ -83,7 +96,7 @@
 #SimGamesTitle{
     position: relative;
     top: -35px;
-    border-bottom: 3px solid lightblue;
+    border-bottom: 3px solid  rgb(197, 229, 240);
     font-size: 35px;
 }
 #SimilarGames{
@@ -101,7 +114,7 @@
     width: 100%;
     left: 0px;
     bottom: 0px;
-    
+    font-family: 'Karma', serif;
 }
 
 .jumbotron {
