@@ -184,7 +184,7 @@
 
                 if (bestBuyData.products[0].onlineAvailability = true) {
                     $("span").append(`
-                    <h6><button id="addToCart" href="${bestBuyData.products[0].addToCartUrl}">Buy it Online!</button>
+                    <h6><a id="addToCart" href="${bestBuyData.products[0].addToCartUrl}">Buy it Online!</a>
                     `)
                 } else if (bestBuyData.products[0].onlineAvailability = false) {
                     $("span").append(`
