@@ -185,6 +185,29 @@ $(document).ready(function () {
                         GameInfo.append(`<div id="GameTitle">${response[0].name}</div>`) // appends game title and added ID for styling
                         $('#GameTitle').append(`<div id="ReleaseDate">${response[0].release_dates[0].human}</div>`);
                         GameInfo.append(`<p id="Summary">${response[0].summary}</p>`) // appends game summary
+                        var Platforms = []
+                        for (var i = 0; i < response[0].platforms.length; i++) {
+                            Platforms.push(response[0].platforms[i]);
+                        }
+                        var PlatformIDs = Platforms.toString();
+                        var settings3 = {
+                            "async": true,
+                            "crossDomain": true,
+                            "url": "https://cors-anywhere.herokuapp.com/https://api-endpoint.igdb.com/platforms/" + PlatformIDs + "?fields=name",
+                            "method": "GET",
+                            "headers": {
+                                "user-key": "186a3663d438fb1004a180d435b09d81",
+                                "accept": "application/json"
+                            },
+                        };
+                        $.ajax(settings3).done(function (response) {
+                            console.log(response);
+                            $('#GameTitle').append(`<div id="Platforms"></div>`);
+                            
+                            for(var i=0; i < response.length; i++){
+                            $('#Platforms').append(`${response[i].name} | `)
+                            }
+                        })
                         var TwitchSettings = {
                             "async": true,
                             "crossDomain": true,
