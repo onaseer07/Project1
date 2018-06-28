@@ -98,7 +98,7 @@
             var GameInfo = $('#GameInfo')
             var Video = $('#Video')
             GameInfo.append(`<div id="GameTitle"><h3 style="font-family:Montserrat, sans-serif;">${response[0].name}</h3></div>`) // appends game title and added ID for styling
-            GameInfo.append(`<span><img id="MainCover" src="https://images.igdb.com/igdb/image/upload/t_cover_big/${response[0].cover.cloudinary_id}.jpg" style="height=auto;width=auto;"><h3>Release Date</h3></span><p>${response[0].summary}</p>`) // appends game summary
+            GameInfo.append(`<span><img id="MainCover" src="https://images.igdb.com/igdb/image/upload/t_cover_big/${response[0].cover.cloudinary_id}.jpg" style="height=auto;width=auto;"><h3>${response[0].release_dates[0].human}</h3></span><p>${response[0].summary}</p>`) // appends game summary
             // console.log(response[0].videos);
             if (response[0].videos) {
                     Video.append(`
