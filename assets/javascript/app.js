@@ -88,7 +88,7 @@
             $.ajax(TwitchSettings).done(function (response) {
                 console.log(response);
 
-                $('.Twitch').append(` <h4 id="twitchHeader" style="font-family:Montserrat, sans-serif;class = "p-3">Live Play</h4><div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="embed-responsive embed-responsive-21by9"><iframe class="embed-responsive-item" src="http://player.twitch.tv/?channel=${response.streams[0].channel.name}&autoplay=false" allowfullscreen frameborder=0><iframe></div>`)
+                $('.Twitch').append(` <h4 id="twitchHeader" style="font-family:Montserrat, sans-serif;class = "p-3">Live Play</h4><div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="embed-responsive embed-responsive-21by9"><iframe class="embed-responsive-item" src="http://player.twitch.tv/?channel=${response.streams[0].channel.name}&autoplay=false" allowfullscreen frameborder=0></iframe></div>`)
 
             })
 
