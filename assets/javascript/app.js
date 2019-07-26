@@ -35,10 +35,10 @@
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://cors-anywhere.herokuapp.com/https://api-endpoint.igdb.com/games/?search=" + term + "$&limit=10&fields=*&filter[rating][gte]=65&filter[popularity][gte]=3",
+            "url": "https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/games/?search=" + term + "$&limit=10&fields=*&filter[rating][gte]=65&filter[popularity][gte]=3",
             "method": "GET",
             "headers": {
-                "user-key": "186a3663d438fb1004a180d435b09d81",
+                "user-key": "3bf9f1d37abb64cea0ac67cc10823d91",
                 "accept": "application/json"
             },
         };
